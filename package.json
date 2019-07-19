@@ -1,0 +1,16 @@
+{
+  "name": "ecosia-navigator",
+  "version": "0.1.0",
+  "description": "Keyboard shortcuts for Ecosia search.",
+  "scripts": {
+    "build": "gulp"
+  },
+  "author": "https://github.com/lichensky",
+  "license": "MIT",
+  "dependencies": {
+    "mousetrap": "^1.6.3"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  }
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Options for Ecosia Navigator</title>
+    <link rel="stylesheet" href="options.css">
+</head>
+
+<body>
+    <div id="keybindings-container">
+        <h3>Keybindings</h3>
+        <div id="keybindings-help">
+            All keybindings should be specified in
+            <a href="https://github.com/ccampbell/mousetrap" target="_blank">Mousetrap</a> format. Examples:
+            <ul>
+                <li>
+                    <kbd class="keybinding">a</kbd>
+                </li>
+                <li>
+                    <kbd class="keybinding">z y</kbd>
+                </li>
+                <li>
+                    <kbd class="keybinding">ctrl+a</kbd>
+                </li>
+                <li>
+                    <kbd class="keybinding">command+a</kbd>
+                </li>
+                <li>
+                    <kbd class="keybinding">a, ctrl+b, z y, command+c</kbd> - multiple shortcuts that will be treated equivalently</li>
+            </ul>
+        </div>
+        <div class="option">
+            <label for="next-key" class="option-desc">Next search result</label>
+            <input id="next-key" class="input-keybinding" type="text" value="down, j">
+        </div>
+        <div class="option">
+            <label for="previous-key" class="option-desc">Previous search result</label>
+            <input id="previous-key" class="input-keybinding" type="text" value="up, k">
+        </div>
+        <div class="option">
+            <label for="navigate-key" class="option-desc">Open</label>
+            <input id="navigate-key" class="input-keybinding" type="text" value="return, space">
+        </div>
+        <div class="option">
+            <label for="navigate-new-tab-background-key" class="option-desc">Open in a new background tab</label>
+            <input id="navigate-new-tab-background-key" class="input-keybinding" type="text" value="ctrl+shift+return, command+shift+return, ctrl+shift+space">
+        </div>
+        <div class="option">
+            <label for="navigate-new-tab-key" class="option-desc">Open in a new window/tab</label>
+            <input id="navigate-new-tab-key" class="input-keybinding" type="text" value="ctrl+return, command+return, ctrl+space">
+        </div>
+        <div class="option">
+            <label for="focus-search-input" class="option-desc">Focus search box</label>
+            <input id="focus-search-input" class="input-keybinding" type="text" value="/, escape">
+        </div>
+        <div class="option">
+            <label for="navigate-next-result-page" class="option-desc">Next page</label>
+            <input id="navigate-next-result-page" class="input-keybinding" type="text" value="right">
+        </div>
+        <div class="option">
+            <label for="navigate-previous-result-page" class="option-desc">Previous page</label>
+            <input id="navigate-previous-result-page" class="input-keybinding" type="text" value="left">
+        </div>
+    </div>
+
+    <div id="status"></div>
+    <button id="save">Save</button>
+
+    <script src="options.js"></script>
+    <script src="options-ui.js"></script>
+</body>
+
+</html>

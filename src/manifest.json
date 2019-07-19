@@ -1,0 +1,32 @@
+{
+  "name": "Ecosia Navigator",
+  "version": "0.1.0",
+  "description": "Keyboard shortcut for Ecosia search.",
+  "manifest_version": 2,
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "content_scripts": [
+    {
+      "js": [
+        "mousetrap.js",
+        "options.js",
+        "extension.js"
+      ],
+      "css": [
+        "search_results.css"
+      ],
+      "run_at": "document_end",
+      "matches": [
+        "*://www.ecosia.org/search*"
+      ]
+    }
+  ],
+  "permissions": ["storage"],
+  "options_page": "options.html",
+  "options_ui": {
+      "page": "options.html",
+      "chrome_style": true
+  }
+}

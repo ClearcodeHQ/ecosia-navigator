@@ -1,0 +1,6 @@
+.focused-search-result::before {
+  content: "\25BA";
+  margin-right: 25px;
+  left: -25px;
+  position: absolute;
+}
